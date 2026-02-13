@@ -4,7 +4,7 @@ import json
 
 
 class LocalQwenClient:
-    def __init__(self, model="qwen3-vl:235b-cloud", host=config_obj.host, port=config_obj.port):
+    def __init__(self, model="qwen3-vl:235b-cloud", host=config_obj.host_ollama, port=config_obj.port_ollama):
         self.base_url = f"http://{host}:{port}"
         self.model = model
 
